@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+
+    // 根据月份输出季节
+    var monthStr = prompt("请输入月份")
+    console.log(typeof monthStr)
+
+    var month = Number.parseInt(monthStr);
+    if (month == 12 || month == 1 || month == 2) {
+        console.log("大约在冬季")
+    } else if (month >= 3 && month <= 5) {
+        console.log("又到了交配季节")
+    } else if (month >= 6 && month <= 8) {
+        console.log("夏天蚊子多")
+    } else if (month >= 9 && month <= 11) {
+        console.log("秋天")
+    } else {
+        console.log("333")
+    }
+
+    switch (month) {
+        case 1:
+            console.log("冬天");
+            break;
+        case 2:
+            console.log("冬天");
+            break;
+    }
+</script>
+<body>
+
+</body>
+</html>
