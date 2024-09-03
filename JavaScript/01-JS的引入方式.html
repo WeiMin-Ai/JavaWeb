@@ -19,10 +19,18 @@
             1. 内嵌式：在head中通过script标签定义脚本代码。
     -->
     <script>
-
+        /*
+            问题：
+            1. JS如何声明函数？
+            2. 函数如何和单击按钮的行为绑定到一起？
+         */
+        function suprise() {
+            // 弹窗提示
+            alert("Hello!")
+        }
     </script>
 </head>
 <body>
-    <button class="btn1">点我有惊喜</button>
+<button class="btn1" onclick="suprise()">点我有惊喜</button>
 </body>
 </html>
