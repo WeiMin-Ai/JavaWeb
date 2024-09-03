@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function sum(number1, number2) {
+        return number1 + number2
+    }
+
+    var result = sum(1, 2)
+    console.log(result)
+
+    var sum2 = function (number1, number2) {
+      console.log(arguments)
+      return number1 + number2
+    }
+    var result = sum2(11, 22)
+    console.log(result)
+
+    function add(getSum) {
+      return getSum(20, 30)
+
+    }
+    var result = add(sum)
+    console.log(result)
+</script>
+<body>
+
+</body>
+</html>
