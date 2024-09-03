@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    var person = new Object()
+    person.name = "Wayne Ming"
+    person.age = 5555
+    person.eat = function (food) {
+        console.log(this.name + " " + food)
+    }
+    console.log(person.name)
+    console.log(person.age)
+    person.eat("火锅")
+
+    var person2 = {
+        "name": "Wayne Ming2",
+        "age": 4442,
+        "eat": function (food){
+            console.log(this.name + " " + food)
+        }
+    }
+    console.log(person2.name)
+    console.log(person2.age)
+    person2.eat("火锅")
+</script>
+<body>
+
+</body>
+</html>
