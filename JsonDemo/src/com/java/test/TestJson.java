@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class TestJson {
     @Test
-    public void testReadJson() throws Exception{
+    public void testWriteJson() throws Exception{
         // 实例化对象
         Dog dog = new Dog("小黄");
         Person wayneMing = new Person("WayneMing", 555, dog);
