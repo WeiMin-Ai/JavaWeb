@@ -6,10 +6,85 @@
 </head>
 <script>
     function func1() {
-        alert("单击了")
+        // alert("单击了1")
+        console.log("单击了1")
     }
+
+    function func2() {
+        // alert("单击了2")
+        console.log("单击了2")
+    }
+
+    function func3() {
+        // alert("双击了1")
+        console.log("双击了1")
+    }
+
+    function func4() {
+        // alert("双击了1")
+        console.log("鼠标悬停")
+    }
+
+    function func5() {
+        // alert("双击了1")
+        console.log("鼠标移动")
+    }
+
+    function testFocus() {
+        console.log("获得焦点")
+    }
+
+    function testBlur() {
+        console.log("失去焦点")
+    }
+
+    function testChange(value) {
+        console.log("内容改变了" + value)
+    }
+
+    function testChange2(value) {
+        console.log("选项改变了" + value)
+    }
+
+    function testSubmit() {
+        // alert("表单提交")
+        var flag = prompt("确定要提交表单嘛？")
+        if (!flag) {
+            // event.preventDefault(); // 阻止组件的默认行为
+            return false
+        }
+        return true
+    }
+
+    function testReset() {
+        console.log("testReset()")
+    }
+
 </script>
 <body>
-    <input type="button" value="按钮" onclick="func1()">
+<form action="01-JS的引入方式.html" method="get" onsubmit="return testSubmit()" onreset="testReset()">
+    用户名:<input
+        type="text"
+        name="username"
+        onfocus="testFocus()"
+        onblur="testBlur()"
+        onchange="testChange(this.value)"> <br>
+    登录账号:<input type="text" name="logoinName"> <br>
+    选择籍贯:
+    <select onchange="testChange2(this.value)">
+        <option value="1">北京</option>
+        <option value="2">上海</option>
+    </select> <br>
+    <input type="submit" value="注册">
+    <input type="reset" value="清空">
+</form>
+
+<input
+        type="button"
+        value="按钮"
+        onclick="func1(),func2()"
+        ondblclick="func3()
+    ">
+<img src="52338778943_6d774ae6ec_k.jpg" onmousemove="func5()" onmouseover="func4()">
 </body>
 </html>
