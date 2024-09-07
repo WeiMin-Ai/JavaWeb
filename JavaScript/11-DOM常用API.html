@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function testAlert(){
+            //普通信息提示框
+            window.alert("提示信息");
+        }
+        function testConfirm(){
+            //确认框
+            var con =confirm("确定要删除吗?");
+            if(con){
+                alert("点击了确定")
+            }else{
+                alert("点击了取消")
+            }
+        }
+        function testPrompt(){
+            //信息输入对话框
+            var res =prompt("请输入昵称","例如:张三");
+            alert("您输入的是:"+res)
+        }
+    </script>
+</head>
+<body>
+    <button>上一页</button>
+    <button>下一页</button>
+    <input type="button" value="提示框" onclick="testAlert()"/> <br>
+    <input type="button" value="确认框" onclick="testConfirm()"/> <br>
+    <input type="button" value="对话框" onclick="testPrompt()"/> <br>
+</body>
+</html>
